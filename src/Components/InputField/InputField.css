@@ -1,0 +1,38 @@
+.InputField {
+  background-color: rgb(228, 208, 109);
+  border: black;
+}
+/* 
+input {
+  margin-right: 16px/2;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+} */
+
+.input {
+  background-color: #3cbc8d;
+  color: white;
+  width: 40%;
+  height: 40%;
+
+  border: 2px solid red;
+  border-radius: 4px;
+}
+input:focus {
+  border: 3px solid #555;
+}
+input:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+/* input {
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  width: 60%;
+} */

@@ -1,0 +1,16 @@
+.Item {
+  display: flex;
+  padding: 6px 45%;
+  justify-content: space-around;
+  margin: 1% 2%;
+}
+
+label {
+  font-size: 1.5em;
+  margin: 2% 20%;
+}
+
+input[type="checkbox"]:checked + label {
+  color: red;
+  text-decoration: line-through;
+} /*This is the MDN spec for doing this*/
