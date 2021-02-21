@@ -7,7 +7,7 @@ import axios from "axios";
 class InputField extends Component {
   itemHolderTemp = "";
   state = {
-    listItems: ["Apple", "Orange", "Mango", "Grapes", "Papaya"],
+    listItems: [],
   };
 
   buttonStyle = {
@@ -71,7 +71,7 @@ class InputField extends Component {
           item={idKey}
           id={idKey + index}
           key={idKey + index}
-          removeListItemHandler={() => this.removeListItemHandler(index)}
+          removeListItemHandler={this.removeListItemHandler.bind(this, index)}
           dashingItem={this.dashingItem}
           show={false}
         />
